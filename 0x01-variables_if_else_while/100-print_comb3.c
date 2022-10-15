@@ -9,14 +9,14 @@ int main(void)
 
 	for (i = '0'; i <= '9'; i++)
 	{
-			for (j = k; j <= '9'; j++)
+		for (j = k; j <= '9'; j++)
 		{
 			if (i != j)
 			{
-				putchar(i);
-				putchar(j);
+			putchar(i);
+			putchar(j);
 		}
-			if (i == j)
+		if (i == j)
 	{
 		continue;
 	}

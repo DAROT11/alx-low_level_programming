@@ -6,6 +6,7 @@
 int main(void)
 {
 	int m, i, j;
+
 	for (i = '0'; i <= '9'; i++)
 	{
 		for (j = '0'; j <= '9'; j++)
@@ -15,7 +16,8 @@ int main(void)
 		if (i < j && j < m)
 	{
 		putchar(i);
-		putchar(j);									putchar(m);
+		putchar(j);
+		putchar(m);
 			if (i == '7' && j == '8' && m == '9')
 			{
 				break;
