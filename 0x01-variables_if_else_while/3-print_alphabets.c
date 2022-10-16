@@ -5,16 +5,21 @@
  */
 int main(void)
 {
-	char i;
-	char j;
+	char ch;
 
-			for (i = 'a'; i <= 'z'; i++)
-{
-			putchar(i);
+	putchar("uppercase  character: \n");
+
+	for (ch = 'A'; ch <= 'Z' ch++)
+
+	{
+		putchar("%c", ch);
+	}
+	putchar("\nlowercase characters: \n");
+
+	for (ch = 'a'; ch <= 'z'; ch++);
+
+	{
+		putchar("%c", ch);
+	}
+	return (0);
 }
-			for (j = 'A'; j <= 'Z'; j++)
-{
-			putchar(j);
-}
-			putchar('\n');
-			return (0);
