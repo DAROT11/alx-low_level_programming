@@ -6,16 +6,16 @@
 int main(void)
 {
 	char i;
+	char j;
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar("%c", i);
+		putchar(i);
 	}
-	for (i = 'A'; i <= 'Z'; i++)
+	for (j = 'A'; j <= 'Z'; j++)
 	{
-		putchar("%c", i);
+		putchar(j);
 	}
-		putchar('\n');
-
-		return (0);
+	putchar('\n');
+	return (0);
 }
