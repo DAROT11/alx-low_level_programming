@@ -1,14 +1,13 @@
 #include <stdio.h>
 /**
 * main- Entry point
-* Description: reverse alphabet
 * Return:0 if no errors, non zero if errors
 */
 int main(void)
 {
 	char i;
 
-	for (i == 'z'; i >= 'a'; i--)
+	for (i = 'z'; i >= 'a'; i--)
 	{
 		putchar(i);
 	}
