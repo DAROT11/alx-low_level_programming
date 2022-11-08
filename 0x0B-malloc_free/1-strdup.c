@@ -2,23 +2,30 @@
 #include <stdlib.h>
 
 /**
-* _strdup - returns a pointer to a newly allowacted space in memory
-* @str: string
-* Return: strout
-*/
+ * _strdup - Duplicate a string
+ * @str: the string to duplicate
+ * Return: the string duplicated
+ */
 
 char *_strdup(char *str)
 {
-	char *strout;
-	unsigned int i, j;
+	int a = 0, i = 1;
+	char *s;
 
 	if (str == NULL)
 		return (NULL);
-	for (i = 0; str[i] != '\0'; i++)
-		strout = (char *)malloc(sizeof(char) * (i + 1));
-	if (strout == NULL)
+	while (str[i])
+	{
+		i++;
+	}
+	s = malloc((sizeof(char) * i) + 1);
+	if (s == NULL)
 		return (NULL);
-	for (j = 0; j <= i; j++)
-		strout[j] = str[j];
-	return (strout);
+	while (a < i)
+	{
+		s[a] = str[a];
+		a++;
+	}
+	s[a] = '\0';
+	return (s);
 }
